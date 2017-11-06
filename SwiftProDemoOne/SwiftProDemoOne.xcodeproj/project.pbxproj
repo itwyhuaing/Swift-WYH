@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26C65F611F95EC2000464BAD /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C65F601F95EC2000464BAD /* ThirdVC.swift */; };
+		26C65F631F95EE2100464BAD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C65F621F95EE2100464BAD /* LoginView.swift */; };
 		46D44CA11F570EFD00635D8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D44CA01F570EFD00635D8F /* AppDelegate.swift */; };
 		46D44CA31F570EFD00635D8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D44CA21F570EFD00635D8F /* ViewController.swift */; };
 		46D44CA61F570EFD00635D8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46D44CA41F570EFD00635D8F /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26C65F601F95EC2000464BAD /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
+		26C65F621F95EE2100464BAD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		46D44C9D1F570EFD00635D8F /* SwiftProDemoOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProDemoOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46D44CA01F570EFD00635D8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46D44CA21F570EFD00635D8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				46D44CB21F57118800635D8F /* BaseVC.swift */,
 				46D44CB41F5711A600635D8F /* FirstVC.swift */,
 				46D44CB61F5711B500635D8F /* SecondVC.swift */,
+				26C65F601F95EC2000464BAD /* ThirdVC.swift */,
+				26C65F621F95EE2100464BAD /* LoginView.swift */,
 				46D44CA71F570EFD00635D8F /* Assets.xcassets */,
 				46D44CA91F570EFD00635D8F /* LaunchScreen.storyboard */,
 				46D44CAC1F570EFD00635D8F /* Info.plist */,
@@ -106,6 +112,7 @@
 					46D44C9C1F570EFD00635D8F = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = JA7UMD99EC;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -146,6 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26C65F611F95EC2000464BAD /* ThirdVC.swift in Sources */,
+				26C65F631F95EE2100464BAD /* LoginView.swift in Sources */,
 				46D44CA31F570EFD00635D8F /* ViewController.swift in Sources */,
 				46D44CB71F5711B500635D8F /* SecondVC.swift in Sources */,
 				46D44CB51F5711A600635D8F /* FirstVC.swift in Sources */,
@@ -273,12 +282,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = JA7UMD99EC;
 				INFOPLIST_FILE = SwiftProDemoOne/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.wyh.cm.SwiftProDemoOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -287,6 +298,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = JA7UMD99EC;
 				INFOPLIST_FILE = SwiftProDemoOne/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -316,6 +328,7 @@
 				46D44CB11F570EFD00635D8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

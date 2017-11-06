@@ -30,3 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+/**
+ 1. ThirdVC 与 LoginView 展示 协议代理 的应用当然也涉及 函数 与 属性
+ 2.
+ */
