@@ -21,4 +21,4 @@ macOS Sierra 10.12.6 , Xcode9.0 , Swift4.0
 
 
 3. Swift工程中引用OC文件需要将相应的头文件导入到桥接文件中
-4. 配置工程及简单使用 [OCProjectDemo](https://github.com/itwyhuaing/Swift-WYH/tree/master/OC与Swift混合开发/OCProject)    [SwiftProjectDemo](https://github.com/itwyhuaing/Swift-WYH/tree/master/OC与Swift混合开发/SwiftProject)
+4. 配置工程及简单使用 [Demo](https://github.com/itwyhuaing/Swift-WYH/tree/master/OC与Swift混合开发/Demo)    
