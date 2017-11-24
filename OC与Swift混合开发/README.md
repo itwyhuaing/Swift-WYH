@@ -14,10 +14,10 @@ macOS Sierra 10.12.6 , Xcode9.0 , Swift4.0
 2. 工程配置有两个地方，且两个地方都需要配置正确，具体如图所示：
 
 
-![image](http://note.youdao.com/favicon.ico)
+![image](https://github.com/itwyhuaing/Swift-WYH/blob/master/OC与Swift混合开发/image/1.png)
 
 
-![image](http://note.youdao.com/favicon.ico)
+![image](https://github.com/itwyhuaing/Swift-WYH/blob/master/OC与Swift混合开发/image/2.png)
 
 
 3. Swift工程中引用OC文件需要将相应的头文件导入到桥接文件中
