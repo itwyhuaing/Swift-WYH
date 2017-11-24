@@ -7,7 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26A04ECB1FC6E50100994DC9 /* MainTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A04ECA1FC6E50100994DC9 /* MainTabBarVC.swift */; };
+		2606DA531FC7FC0E00B6D076 /* MainTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2606DA521FC7FC0E00B6D076 /* MainTabBarVC.swift */; };
+		2606DA541FC7FD6200B6D076 /* CYLConstants.h in Sources */ = {isa = PBXBuildFile; fileRef = 26A04EB71FC6DC2A00994DC9 /* CYLConstants.h */; };
+		2606DA551FC7FD6200B6D076 /* CYLPlusButton.h in Sources */ = {isa = PBXBuildFile; fileRef = 26A04EB81FC6DC2A00994DC9 /* CYLPlusButton.h */; };
+		2606DA561FC7FD6200B6D076 /* CYLPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A04EB91FC6DC2A00994DC9 /* CYLPlusButton.m */; };
+		2606DA571FC7FD6200B6D076 /* CYLTabBar.h in Sources */ = {isa = PBXBuildFile; fileRef = 26A04EBA1FC6DC2A00994DC9 /* CYLTabBar.h */; };
+		2606DA581FC7FD6200B6D076 /* CYLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A04EBB1FC6DC2A00994DC9 /* CYLTabBar.m */; };
+		2606DA591FC7FD6200B6D076 /* CYLTabBarController.h in Sources */ = {isa = PBXBuildFile; fileRef = 26A04EBC1FC6DC2A00994DC9 /* CYLTabBarController.h */; };
+		2606DA5A1FC7FD6200B6D076 /* CYLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A04EBD1FC6DC2A00994DC9 /* CYLTabBarController.m */; };
+		2606DA5B1FC7FD6200B6D076 /* UIControl+CYLTabBarControllerExtention.h in Sources */ = {isa = PBXBuildFile; fileRef = 26A04EBE1FC6DC2A00994DC9 /* UIControl+CYLTabBarControllerExtention.h */; };
+		2606DA5C1FC7FD6200B6D076 /* UIControl+CYLTabBarControllerExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A04EBF1FC6DC2A00994DC9 /* UIControl+CYLTabBarControllerExtention.m */; };
+		2606DA5D1FC7FD6200B6D076 /* UITabBarItem+CYLTabBarControllerExtention.h in Sources */ = {isa = PBXBuildFile; fileRef = 26A04EC01FC6DC2A00994DC9 /* UITabBarItem+CYLTabBarControllerExtention.h */; };
+		2606DA5E1FC7FD6200B6D076 /* UITabBarItem+CYLTabBarControllerExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A04EC11FC6DC2A00994DC9 /* UITabBarItem+CYLTabBarControllerExtention.m */; };
+		2606DA5F1FC7FD6200B6D076 /* UIView+CYLTabBarControllerExtention.h in Sources */ = {isa = PBXBuildFile; fileRef = 26A04EC21FC6DC2A00994DC9 /* UIView+CYLTabBarControllerExtention.h */; };
+		2606DA601FC7FD6200B6D076 /* UIView+CYLTabBarControllerExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A04EC31FC6DC2A00994DC9 /* UIView+CYLTabBarControllerExtention.m */; };
+		2606DA611FC7FD6200B6D076 /* UIViewController+CYLTabBarControllerExtention.h in Sources */ = {isa = PBXBuildFile; fileRef = 26A04EC41FC6DC2A00994DC9 /* UIViewController+CYLTabBarControllerExtention.h */; };
+		2606DA621FC7FD6200B6D076 /* UIViewController+CYLTabBarControllerExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A04EC51FC6DC2A00994DC9 /* UIViewController+CYLTabBarControllerExtention.m */; };
 		26A04ECD1FC6E54A00994DC9 /* HomePageSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26A04ECC1FC6E54A00994DC9 /* HomePageSB.storyboard */; };
 		26A04ECF1FC6E55C00994DC9 /* UserCenterSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26A04ECE1FC6E55C00994DC9 /* UserCenterSB.storyboard */; };
 		46BDC79E1FC5BD33009B87E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BDC79D1FC5BD33009B87E8 /* AppDelegate.swift */; };
@@ -20,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		238893813BDB6939E754C375 /* Pods_ZhiXingJianYan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZhiXingJianYan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2606DA521FC7FC0E00B6D076 /* MainTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarVC.swift; sourceTree = "<group>"; };
 		26A04EB01FC6D9DC00994DC9 /* ZhiXingJianYan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZhiXingJianYan-Bridging-Header.h"; sourceTree = "<group>"; };
 		26A04EB71FC6DC2A00994DC9 /* CYLConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLConstants.h; sourceTree = "<group>"; };
 		26A04EB81FC6DC2A00994DC9 /* CYLPlusButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYLPlusButton.h; sourceTree = "<group>"; };
@@ -36,7 +52,6 @@
 		26A04EC31FC6DC2A00994DC9 /* UIView+CYLTabBarControllerExtention.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CYLTabBarControllerExtention.m"; sourceTree = "<group>"; };
 		26A04EC41FC6DC2A00994DC9 /* UIViewController+CYLTabBarControllerExtention.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CYLTabBarControllerExtention.h"; sourceTree = "<group>"; };
 		26A04EC51FC6DC2A00994DC9 /* UIViewController+CYLTabBarControllerExtention.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CYLTabBarControllerExtention.m"; sourceTree = "<group>"; };
-		26A04ECA1FC6E50100994DC9 /* MainTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarVC.swift; sourceTree = "<group>"; };
 		26A04ECC1FC6E54A00994DC9 /* HomePageSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePageSB.storyboard; sourceTree = "<group>"; };
 		26A04ECE1FC6E55C00994DC9 /* UserCenterSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserCenterSB.storyboard; sourceTree = "<group>"; };
 		46BDC79A1FC5BD33009B87E8 /* ZhiXingJianYan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhiXingJianYan.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,9 +80,9 @@
 		26A04EB11FC6DBE900994DC9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				26A04ECA1FC6E50100994DC9 /* MainTabBarVC.swift */,
 				26A04EB21FC6DBE900994DC9 /* HomePage */,
 				26A04EB31FC6DBE900994DC9 /* UserCenter */,
+				2606DA521FC7FC0E00B6D076 /* MainTabBarVC.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -307,8 +322,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2606DA541FC7FD6200B6D076 /* CYLConstants.h in Sources */,
+				2606DA551FC7FD6200B6D076 /* CYLPlusButton.h in Sources */,
+				2606DA561FC7FD6200B6D076 /* CYLPlusButton.m in Sources */,
+				2606DA571FC7FD6200B6D076 /* CYLTabBar.h in Sources */,
+				2606DA581FC7FD6200B6D076 /* CYLTabBar.m in Sources */,
+				2606DA591FC7FD6200B6D076 /* CYLTabBarController.h in Sources */,
+				2606DA5A1FC7FD6200B6D076 /* CYLTabBarController.m in Sources */,
+				2606DA5B1FC7FD6200B6D076 /* UIControl+CYLTabBarControllerExtention.h in Sources */,
+				2606DA5C1FC7FD6200B6D076 /* UIControl+CYLTabBarControllerExtention.m in Sources */,
+				2606DA5D1FC7FD6200B6D076 /* UITabBarItem+CYLTabBarControllerExtention.h in Sources */,
+				2606DA5E1FC7FD6200B6D076 /* UITabBarItem+CYLTabBarControllerExtention.m in Sources */,
+				2606DA5F1FC7FD6200B6D076 /* UIView+CYLTabBarControllerExtention.h in Sources */,
+				2606DA601FC7FD6200B6D076 /* UIView+CYLTabBarControllerExtention.m in Sources */,
+				2606DA611FC7FD6200B6D076 /* UIViewController+CYLTabBarControllerExtention.h in Sources */,
+				2606DA621FC7FD6200B6D076 /* UIViewController+CYLTabBarControllerExtention.m in Sources */,
 				46BDC7A01FC5BD33009B87E8 /* ViewController.swift in Sources */,
-				26A04ECB1FC6E50100994DC9 /* MainTabBarVC.swift in Sources */,
+				2606DA531FC7FC0E00B6D076 /* MainTabBarVC.swift in Sources */,
 				46BDC79E1FC5BD33009B87E8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,12 +464,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 45542K4894;
 				INFOPLIST_FILE = ZhiXingJianYan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zhixing.com.ZhiXingJianYan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ZhiXingJianYan/Modules/HomePage/ZhiXingJianYan-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZhiXingJianYan/ZhiXingJianYan-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -451,12 +482,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 45542K4894;
 				INFOPLIST_FILE = ZhiXingJianYan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zhixing.com.ZhiXingJianYan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ZhiXingJianYan/Modules/HomePage/ZhiXingJianYan-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZhiXingJianYan/ZhiXingJianYan-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

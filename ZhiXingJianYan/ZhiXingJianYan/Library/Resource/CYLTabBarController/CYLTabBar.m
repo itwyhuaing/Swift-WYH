@@ -83,6 +83,9 @@ static void *const CYLTabBarContext = (void*)&CYLTabBarContext;
     self.tabBarItemWidth = CYLTabBarItemWidth;
     NSArray *sortedSubviews = [self sortedSubviews];
     self.tabBarButtonArray = [self tabBarButtonFromTabBarSubviews:sortedSubviews];
+    if (self.tabBarButtonArray.count <= 0 || self.tabBarButtonArray == nil) {
+        return;
+    }
     [self setupTabImageViewDefaultOffset:self.tabBarButtonArray[0]];
     if (!CYLExternPlusButton) {
         return;
