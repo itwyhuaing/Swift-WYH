@@ -1,21 +1,19 @@
 //
-//  MainTabBarVC.swift
+//  UserCenterVC.swift
 //  ZhiXingJianYan
 //
-//  Created by hnbwyh on 2017/11/24.
+//  Created by hnbwyh on 2017/11/28.
 //  Copyright © 2017年 ZhiXing. All rights reserved.
 //
 
 import UIKit
-import RAMAnimatedTabBarController
 
-class MainTabBarVC: UIViewController { // RAMAnimatedTabBarController UIViewController
-    
+class UserCenterVC: BaseVC {
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
-        
-        
+        //self.title = "UserCenterVC"
         
     }
 
