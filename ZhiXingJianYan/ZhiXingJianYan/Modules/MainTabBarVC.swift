@@ -2,18 +2,21 @@
 //  MainTabBarVC.swift
 //  ZhiXingJianYan
 //
-//  Created by hnbwyh on 2017/11/23.
+//  Created by hnbwyh on 2017/11/24.
 //  Copyright © 2017年 ZhiXing. All rights reserved.
 //
 
 import UIKit
+import RAMAnimatedTabBarController
 
-class MainTabBarVC: CYLTabBarController {
-
+class MainTabBarVC: UIViewController { // RAMAnimatedTabBarController UIViewController
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor.white
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
