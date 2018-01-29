@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		266B74062019D11A0007D719 /* CustomUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266B74052019D11A0007D719 /* CustomUtil.swift */; };
 		26C65F611F95EC2000464BAD /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C65F601F95EC2000464BAD /* ThirdVC.swift */; };
 		26C65F631F95EE2100464BAD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C65F621F95EE2100464BAD /* LoginView.swift */; };
 		46D44CA11F570EFD00635D8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D44CA01F570EFD00635D8F /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		266B74052019D11A0007D719 /* CustomUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUtil.swift; sourceTree = "<group>"; };
 		26C65F601F95EC2000464BAD /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
 		26C65F621F95EE2100464BAD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		46D44C9D1F570EFD00635D8F /* SwiftProDemoOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProDemoOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,7 @@
 				46D44CA41F570EFD00635D8F /* Main.storyboard */,
 				46D44CB21F57118800635D8F /* BaseVC.swift */,
 				46D44CB41F5711A600635D8F /* FirstVC.swift */,
+				266B74052019D11A0007D719 /* CustomUtil.swift */,
 				46D44CB61F5711B500635D8F /* SecondVC.swift */,
 				26C65F601F95EC2000464BAD /* ThirdVC.swift */,
 				26C65F621F95EE2100464BAD /* LoginView.swift */,
@@ -157,6 +160,7 @@
 				26C65F631F95EE2100464BAD /* LoginView.swift in Sources */,
 				46D44CA31F570EFD00635D8F /* ViewController.swift in Sources */,
 				46D44CB71F5711B500635D8F /* SecondVC.swift in Sources */,
+				266B74062019D11A0007D719 /* CustomUtil.swift in Sources */,
 				46D44CB51F5711A600635D8F /* FirstVC.swift in Sources */,
 				46D44CB31F57118800635D8F /* BaseVC.swift in Sources */,
 				46D44CA11F570EFD00635D8F /* AppDelegate.swift in Sources */,

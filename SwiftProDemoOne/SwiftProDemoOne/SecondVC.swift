@@ -12,9 +12,15 @@ import UIKit
 
 class SecondVC: BaseVC {
 
+// MARK: - life-cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "SecondVC"
+        self.title = "SecondVC-简单算法实现"
+        
+        var t = 88
+        var m = 100
+        swap1(a: 59, b: 99)
+        swap2(a:&t,b:&m)
         
     }
 
@@ -24,14 +30,26 @@ class SecondVC: BaseVC {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func swap1(a:Int,b:Int) {
+        var a = a
+        var b = b
+        print(" 11 \n : a = \(a) , b = \(b)")
+        let tmp = a
+        a = b
+        b = tmp
+        print(" 22 \n : a = \(a) , b = \(b)")
+        
     }
-    */
+    
+    func swap2(a:inout Int,b:inout Int) {
+        print(" 1111 \n : a = \(a) , b = \(b)")
+        let tmp = a
+        a = b
+        b = tmp
+        print(" 2222 \n : a = \(a) , b = \(b)")
+        
+    }
+    
 
 }

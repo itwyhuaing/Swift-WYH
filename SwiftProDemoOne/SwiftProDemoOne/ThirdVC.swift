@@ -16,44 +16,42 @@ class ThirdVC: BaseVC,LoginViewDelegate{
         super.viewDidLoad()
         lgview = LoginView.init(frame: CGRect(x:0,y:0,width:UIScreen.main.bounds.size.width,height:UIScreen.main.bounds.size.height))
         lgview.delegate = self
-        self.view.addSubview(lgview)
         
-        var t = 88
-        var m = 100
-        swap1(a: 59, b: 99)
-        swap2(a:&t,b:&m)
-
+        // 闭包点击事件处理
+        lgview!.usrReadClick = {
+            (btn:UIButton,info:String) in
+            print("btn:\(btn) ,info: \(info)")
+        }
+        self.view.addSubview(lgview)
+        self.title = "ThirdVC-登陆 UI"
+        
+        // 通知事件处理
+        NotificationCenter.default.addObserver(self, selector: #selector(clickOtherLogin(notifyInfo:)), name: lgview.NOTIFYCATION_NAME, object: nil)
+        
     }
 
+    deinit {
+        /**
+         该方法属于析构函数。与 OC 的 dealloc 函数一样，通常在对象结束其生命周期时，系统自动执行该函数。
+         */
+        print(" \n \n \(#function)  \n \n ")
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
     }
 
+    // 代理事件处理
     func clickLoginView(btn: UIButton, str1: String, str2: String) {
         print(" clickLoginView : btn = \(btn) , str1 = \(str1) , str2 = \(str2) ")
         
     }
     
-    func swap1(a:Int,b:Int) {
-        var a = a
-        var b = b
-        print(" 11 \n : a = \(a) , b = \(b)")
-        let tmp = a
-        a = b
-        b = tmp
-        print(" 22 \n : a = \(a) , b = \(b)")
+    func clickOtherLogin(notifyInfo:Notification) {
+        print("\n \n \(#function) \n notifyInfo : \(notifyInfo) \n ")
         
     }
-    
-    func swap2(a:inout Int,b:inout Int) {
-        print(" 1111 \n : a = \(a) , b = \(b)")
-        let tmp = a
-        a = b
-        b = tmp
-        print(" 2222 \n : a = \(a) , b = \(b)")
-        
-    }
-    
     
 }
