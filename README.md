@@ -15,6 +15,7 @@ Swift 记录。
 1. 自行创建 window ,对 tab、nav 简单设置
 2. ThirdVC 通过一个 登陆 UI  实现代理、闭包、属性、通知
 3. FirstVC 单例、KVC
+4. SnapKitVC UI 约束库
 ```
 
 

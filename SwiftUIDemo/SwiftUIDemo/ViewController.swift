@@ -23,7 +23,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         table.delegate = self
         table.dataSource = self
         table.separatorStyle = .none
-        let arr = ["QQTableViewVC","FlowCollectionVC","DatePickViewVC"]
+        let arr = ["QQTableViewVC","FlowCollectionVC","DatePickViewVC","SnapKitVC"]
         dataSource.addObjects(from: arr)
         
     }
@@ -67,6 +67,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             self.navigationController?.pushViewController(vc, animated: true)
         }else if clString == "DatePickViewVC" {
             let vc = DatePickViewVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else if clString == "SnapKitVC" {
+            let vc = SnapKitVC()
             self.navigationController?.pushViewController(vc, animated: true)
         }
         
