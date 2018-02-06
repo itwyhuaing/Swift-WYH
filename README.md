@@ -18,6 +18,14 @@ Swift 记录。
 4. SnapKitVC UI 约束库
 ```
 
+* AlamofireDemo
+```
+
+```
+
 
 #### OC与Swift混合开发
 * [OC与Swift混合开发](https://github.com/itwyhuaing/Swift-WYH/tree/master/OC与Swift混合开发)
+
+##### 参考
+* [【iOS开发】Alamofire框架的使用一 —— 基本用法](https://www.jianshu.com/p/f8c3adb056cf)
