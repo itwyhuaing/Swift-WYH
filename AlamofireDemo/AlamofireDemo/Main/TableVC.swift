@@ -17,7 +17,7 @@ class TableVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.separatorStyle = .none
-        
+        self.title = "MainVC"
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,8 +51,24 @@ class TableVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(" IndexPath.row : ",indexPath.row)
-        let vc = FirstVC()
+        var vc = UIViewController()
+        
+        switch indexPath.row {
+        case 0:
+            vc = FirstVC()
+        break
+            
+        case 1:
+            vc = SecondVC()
+        break
+            
+        default:
+        break
+            
+        }
+        
         self.navigationController?.pushViewController(vc, animated: true)
+        
         
     }
     

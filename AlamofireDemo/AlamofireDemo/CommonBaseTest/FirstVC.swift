@@ -50,42 +50,6 @@ class FirstVC: UITableViewController {
         switch indexPath.row {
             // https://www.hinabian.com/user_register/appGetMobileNation
             // https://m.ctrip.com/restapi/soa2/10290/GetAppConfig.json
-            /*
-             {
-             "head": {
-             "sauth": "",
-             "extension": [{
-             "name": "appid",
-             "value": "99999999"
-             }],
-             "lang": "01",
-             "syscode": "12",
-             "sid": "8890",
-             "auth": "",
-             "cver": "710.002",
-             "ctok": "c27f42e37491cc656ec3f79a468f671018c5ed6d524fcf1bde9a245e02272cd7",
-             "cid": "12001131710060559645"
-             }
-             }
-             
-             {
-             "head": {
-             "sauth": "",
-             "extension": [{
-             "name": "appid",
-             "value": "99999999"
-             }],
-             "lang": "01",
-             "syscode": "12",
-             "sid": "8890",
-             "auth": "",
-             "cver": "710.002",
-             "ctok": "c27f42e37491cc656ec3f79a468f671018c5ed6d524fcf1bde9a245e02272cd7",
-             "cid": "12001131710060559645"
-             }
-             }
-             
-             */
         case 0:
             let URLString = "https://m.ctrip.com/restapi/soa2/10290/GetAppConfig.json";
             var para:Parameters = ["head": [
@@ -103,11 +67,19 @@ class FirstVC: UITableViewController {
                 "cid": "12001131710060559645"
                 ]]
             
-//            for i in 1...9999 {
             Alamofire.request(URLString,method:.post,parameters:para).responseJSON{ resJson in
-                    print(" 携程数据请求 次数：\(0) resJson: \(resJson)")
+                
+                //print(" 携程数据请求 次数：\(0) resJson: \(resJson)")
+                
+                    switch resJson.result{
+                        case .success:
+                            print(" 携程数据请求 次数：\(0) resJson: \(resJson)")
+                        case .failure(let error):
+                            print(" 携程数据请求 - failure : \(error) ")
+                    }
+                    
                 }
-//            }
+
             break
             
         case 1:
@@ -130,9 +102,64 @@ class FirstVC: UITableViewController {
             })
             
             break
+            
         case 2:
+            
+            // 单个响应
+            let URLString = ""
+            Alamofire.request(URLString).response(completionHandler: { (res) in
+                
+            })
+            
+            Alamofire.request(URLString).responseData(completionHandler: { (resData) in
+                
+            })
+            
+            Alamofire.request(URLString).responseJSON(completionHandler: { (resJsON) in
+                
+            })
+            
+            Alamofire.request(URLString).responseString(completionHandler: { (resString) in
+                
+            })
+            
+            Alamofire.request(URLString).responsePropertyList(completionHandler: { (resList) in
+                
+            })
+            
+            
+            // 链式响应
+            Alamofire.request(URLString)
+                .responseData(completionHandler: { (resData) in
+                
+            })
+                .responseJSON(completionHandler: { (resJson) in
+                    
+                })
+            
+            
+            // 响应队列
+            let queue = DispatchQueue.global(qos:.utility)
+            Alamofire.request(URLString).responseJSON(queue: queue,completionHandler: { (resJson) in
+                
+            })
+            
+            
+            
             break
         case 3:
+            
+            Alamofire.download("https://httpbin.org/image/png")
+                .downloadProgress { progress in
+                    print("Download Progress: \(progress.fractionCompleted)")
+                }
+                .responseData { response in
+                    if let data = response.result.value {
+                        let image = UIImage(data: data)
+                    }
+            }
+            
+            
             break
         default:
             break

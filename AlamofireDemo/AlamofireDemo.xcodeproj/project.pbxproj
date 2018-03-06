@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2608A8DA20465375000938DB /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2608A8D920465375000938DB /* SecondVC.swift */; };
 		26408BAC202444BA006B09D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26408BAA202444BA006B09D2 /* Main.storyboard */; };
 		26408BAE202444BA006B09D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26408BAD202444BA006B09D2 /* Assets.xcassets */; };
 		26408BB1202444BA006B09D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26408BAF202444BA006B09D2 /* LaunchScreen.storyboard */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		0994301A9FD92CA41CD1C595 /* Pods_AlamofireDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamofireDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2608A8D920465375000938DB /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		26408BA3202444BA006B09D2 /* AlamofireDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamofireDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26408BAB202444BA006B09D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26408BAD202444BA006B09D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				26408BDE20245404006B09D2 /* FirstVC.swift */,
+				2608A8D920465375000938DB /* SecondVC.swift */,
 			);
 			path = CommonBaseTest;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26408BDD202453E6006B09D2 /* AppDelegate.swift in Sources */,
+				2608A8DA20465375000938DB /* SecondVC.swift in Sources */,
 				26408BDF20245404006B09D2 /* FirstVC.swift in Sources */,
 				26408BDC202453E6006B09D2 /* ViewController.swift in Sources */,
 				26408BDB202453E6006B09D2 /* TableVC.swift in Sources */,
