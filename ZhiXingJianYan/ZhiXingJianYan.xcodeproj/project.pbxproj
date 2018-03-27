@@ -7,13 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2606DA531FC7FC0E00B6D076 /* MainTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2606DA521FC7FC0E00B6D076 /* MainTabBarVC.swift */; };
-		26A7ECC81FCD5D1B00A3A079 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A7ECC71FCD5D1B00A3A079 /* BaseVC.swift */; };
-		26A7ECCA1FCD5D4600A3A079 /* TopicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A7ECC91FCD5D4600A3A079 /* TopicVC.swift */; };
-		26A7ECCC1FCD5D5F00A3A079 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A7ECCB1FCD5D5F00A3A079 /* HomePageVC.swift */; };
-		26A7ECCE1FCD5D7000A3A079 /* UserCenterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A7ECCD1FCD5D7000A3A079 /* UserCenterVC.swift */; };
-		26A7ECD01FCD6BF700A3A079 /* TabAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A7ECCF1FCD6BF700A3A079 /* TabAnimation.swift */; };
-		26A7ECD11FCE49D100A3A079 /* RAMAnimatedTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A7ECD21FCE49D100A3A079 /* RAMAnimatedTabBarController.framework */; };
+		268CFC7D20624B2700331816 /* MainTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268CFC7C20624B2700331816 /* MainTabVC.swift */; };
 		46BDC79E1FC5BD33009B87E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BDC79D1FC5BD33009B87E8 /* AppDelegate.swift */; };
 		46BDC7A01FC5BD33009B87E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BDC79F1FC5BD33009B87E8 /* ViewController.swift */; };
 		46BDC7A31FC5BD33009B87E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BDC7A11FC5BD33009B87E8 /* Main.storyboard */; };
@@ -24,13 +18,8 @@
 
 /* Begin PBXFileReference section */
 		238893813BDB6939E754C375 /* Pods_ZhiXingJianYan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZhiXingJianYan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2606DA521FC7FC0E00B6D076 /* MainTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarVC.swift; sourceTree = "<group>"; };
+		268CFC7C20624B2700331816 /* MainTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabVC.swift; sourceTree = "<group>"; };
 		26A04EB01FC6D9DC00994DC9 /* ZhiXingJianYan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZhiXingJianYan-Bridging-Header.h"; sourceTree = "<group>"; };
-		26A7ECC71FCD5D1B00A3A079 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
-		26A7ECC91FCD5D4600A3A079 /* TopicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicVC.swift; sourceTree = "<group>"; };
-		26A7ECCB1FCD5D5F00A3A079 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
-		26A7ECCD1FCD5D7000A3A079 /* UserCenterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCenterVC.swift; sourceTree = "<group>"; };
-		26A7ECCF1FCD6BF700A3A079 /* TabAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabAnimation.swift; sourceTree = "<group>"; };
 		26A7ECD21FCE49D100A3A079 /* RAMAnimatedTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RAMAnimatedTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46BDC79A1FC5BD33009B87E8 /* ZhiXingJianYan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhiXingJianYan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46BDC79D1FC5BD33009B87E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +37,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26A7ECD11FCE49D100A3A079 /* RAMAnimatedTabBarController.framework in Frameworks */,
 				92CF9776427EC9B8668CFBB9 /* Pods_ZhiXingJianYan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,43 +44,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		26A04EB11FC6DBE900994DC9 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				2606DA521FC7FC0E00B6D076 /* MainTabBarVC.swift */,
-				26A7ECC71FCD5D1B00A3A079 /* BaseVC.swift */,
-				26A7ECCF1FCD6BF700A3A079 /* TabAnimation.swift */,
-				26A7ECC61FCD5CE600A3A079 /* Topic */,
-				26A04EB21FC6DBE900994DC9 /* HomePage */,
-				26A04EB31FC6DBE900994DC9 /* UserCenter */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		26A04EB21FC6DBE900994DC9 /* HomePage */ = {
-			isa = PBXGroup;
-			children = (
-				26A7ECCB1FCD5D5F00A3A079 /* HomePageVC.swift */,
-			);
-			path = HomePage;
-			sourceTree = "<group>";
-		};
-		26A04EB31FC6DBE900994DC9 /* UserCenter */ = {
-			isa = PBXGroup;
-			children = (
-				26A7ECCD1FCD5D7000A3A079 /* UserCenterVC.swift */,
-			);
-			path = UserCenter;
-			sourceTree = "<group>";
-		};
-		26A7ECC61FCD5CE600A3A079 /* Topic */ = {
-			isa = PBXGroup;
-			children = (
-				26A7ECC91FCD5D4600A3A079 /* TopicVC.swift */,
-			);
-			path = Topic;
-			sourceTree = "<group>";
-		};
 		2BFF641698F8E685493E4674 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,9 +74,9 @@
 		46BDC79C1FC5BD33009B87E8 /* ZhiXingJianYan */ = {
 			isa = PBXGroup;
 			children = (
-				26A04EB11FC6DBE900994DC9 /* Modules */,
 				46BDC79D1FC5BD33009B87E8 /* AppDelegate.swift */,
 				46BDC79F1FC5BD33009B87E8 /* ViewController.swift */,
+				268CFC7C20624B2700331816 /* MainTabVC.swift */,
 				46BDC7A11FC5BD33009B87E8 /* Main.storyboard */,
 				46BDC7A41FC5BD33009B87E8 /* Assets.xcassets */,
 				46BDC7A61FC5BD33009B87E8 /* LaunchScreen.storyboard */,
@@ -179,7 +130,7 @@
 				TargetAttributes = {
 					46BDC7991FC5BD33009B87E8 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 45542K4894;
+						DevelopmentTeam = JA7UMD99EC;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -276,13 +227,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				46BDC7A01FC5BD33009B87E8 /* ViewController.swift in Sources */,
-				26A7ECCA1FCD5D4600A3A079 /* TopicVC.swift in Sources */,
-				26A7ECCC1FCD5D5F00A3A079 /* HomePageVC.swift in Sources */,
-				2606DA531FC7FC0E00B6D076 /* MainTabBarVC.swift in Sources */,
-				26A7ECD01FCD6BF700A3A079 /* TabAnimation.swift in Sources */,
+				268CFC7D20624B2700331816 /* MainTabVC.swift in Sources */,
 				46BDC79E1FC5BD33009B87E8 /* AppDelegate.swift in Sources */,
-				26A7ECC81FCD5D1B00A3A079 /* BaseVC.swift in Sources */,
-				26A7ECCE1FCD5D7000A3A079 /* UserCenterVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = 45542K4894;
+				DEVELOPMENT_TEAM = JA7UMD99EC;
 				INFOPLIST_FILE = ZhiXingJianYan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zhixing.com.ZhiXingJianYan;
@@ -426,7 +372,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = 45542K4894;
+				DEVELOPMENT_TEAM = JA7UMD99EC;
 				INFOPLIST_FILE = ZhiXingJianYan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zhixing.com.ZhiXingJianYan;

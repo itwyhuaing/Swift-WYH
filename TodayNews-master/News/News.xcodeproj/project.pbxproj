@@ -786,7 +786,6 @@
 				9405D9A41F6942A400AA60D4 /* Tools */,
 				9405D9A11F6940C200AA60D4 /* Extension */,
 				942DCF531F602220001AD160 /* Controller */,
-				942DCF561F602220001AD160 /* Model */,
 				942DCF581F602220001AD160 /* View */,
 			);
 			path = Main;
@@ -799,13 +798,6 @@
 				942DCF551F602220001AD160 /* MyTabBarController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		942DCF561F602220001AD160 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		942DCF581F602220001AD160 /* View */ = {
