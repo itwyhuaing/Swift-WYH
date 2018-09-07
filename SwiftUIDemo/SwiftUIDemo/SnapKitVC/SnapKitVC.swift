@@ -13,8 +13,6 @@ class SnapKitVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -131,7 +129,7 @@ class SnapKitVC: UIViewController {
         btn.addTarget(self, action: #selector(clickEvent(btn:)), for: .touchUpInside)
         view.addSubview(btn)
         btn.snp.makeConstraints { (make) in
-            make.top.equalTo(80)
+            make.top.equalTo(100)
             make.height.equalTo(30)
             make.width.equalTo(100)
             make.centerX.equalToSuperview()

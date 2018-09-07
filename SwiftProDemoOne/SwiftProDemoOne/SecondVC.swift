@@ -15,7 +15,7 @@ class SecondVC: BaseVC {
 // MARK: - life-cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "SecondVC-简单算法实现"
+        self.title = "1VC简单算法"
         
         var t = 88
         var m = 100

@@ -12,7 +12,7 @@ class FirstVC: BaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "FirstVC"
+        self.title = "1VC"
         
         // 单例与 KVC
         let cusU = CustomUtil.sharedInstance
