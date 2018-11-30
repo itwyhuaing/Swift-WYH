@@ -18,7 +18,7 @@ class FlowCollectionVC: UIViewController,UICollectionViewDelegate,UICollectionVi
     override func viewDidLoad() {
         super.viewDidLoad()
         // 数据初始化
-        sectionsData .addObjects(from: ["我的应用","便民生活"])
+        sectionsData .addObjects(from: ["我的应用","便民生活","数据测试","出行方式","幸福生活"])
         
         // UI 初始化
         collectionV.backgroundColor  = UIColor.orange;

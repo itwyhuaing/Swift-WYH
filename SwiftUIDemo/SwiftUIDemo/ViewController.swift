@@ -61,21 +61,12 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         table.deselectRow(at: indexPath, animated: true)
         
+        let proName = Bundle.main.infoDictionary?["CFBundleExecutable"] as! String
         let clString: String = dataSource[indexPath.row] as! String
-        if clString == "QQTableViewVC" {
-            let vc = QQTableViewVC()
-            self.navigationController?.pushViewController(vc, animated: true)
-        }else if clString == "FlowCollectionVC" {
-            let vc = FlowCollectionVC()
-            self.navigationController?.pushViewController(vc, animated: true)
-        }else if clString == "DatePickViewVC" {
-            let vc = DatePickViewVC()
-            self.navigationController?.pushViewController(vc, animated: true)
-        }else if clString == "SnapKitVC" {
-            let vc = SnapKitVC()
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
-        
+        let vcstr = proName + "." + clString
+        let tvc = NSClassFromString(vcstr) as! UIViewController.Type
+        let theVC = tvc.init()
+        self.navigationController?.pushViewController(theVC, animated: true)
         
     }
 
