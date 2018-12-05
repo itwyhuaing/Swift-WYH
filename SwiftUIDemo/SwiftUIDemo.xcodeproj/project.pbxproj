@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		263C64E721B6620400F69C38 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263C64E621B6620400F69C38 /* LoginVC.swift */; };
+		263C64E921B6624000F69C38 /* BlankVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263C64E821B6624000F69C38 /* BlankVC.swift */; };
 		268627A0201ECBBC002F610E /* SnapKitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2686279F201ECBBC002F610E /* SnapKitVC.swift */; };
-		268627A2201ECFC9002F610E /* SnapLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268627A1201ECFC9002F610E /* SnapLoginView.swift */; };
 		269B290B21421F0B00CCC515 /* CustomItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269B290A21421F0B00CCC515 /* CustomItem.swift */; };
 		269B290D2142535700CCC515 /* CollectionReusableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269B290C2142535700CCC515 /* CollectionReusableHeaderView.swift */; };
 		463CC6AB200084DB00C782E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463CC6AA200084DB00C782E5 /* AppDelegate.swift */; };
@@ -24,8 +25,9 @@
 
 /* Begin PBXFileReference section */
 		13DBB8F1CF67D760B45E60D1 /* Pods-SwiftUIDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftUIDemo/Pods-SwiftUIDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		263C64E621B6620400F69C38 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		263C64E821B6624000F69C38 /* BlankVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankVC.swift; sourceTree = "<group>"; };
 		2686279F201ECBBC002F610E /* SnapKitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitVC.swift; sourceTree = "<group>"; };
-		268627A1201ECFC9002F610E /* SnapLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapLoginView.swift; sourceTree = "<group>"; };
 		269B290A21421F0B00CCC515 /* CustomItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomItem.swift; sourceTree = "<group>"; };
 		269B290C2142535700CCC515 /* CollectionReusableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableHeaderView.swift; sourceTree = "<group>"; };
 		463CC6A7200084DB00C782E5 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,11 +64,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		263C64E521B661D400F69C38 /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				263C64E621B6620400F69C38 /* LoginVC.swift */,
+				263C64E821B6624000F69C38 /* BlankVC.swift */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
 		2686279E201ECB41002F610E /* SnapKitVC */ = {
 			isa = PBXGroup;
 			children = (
 				2686279F201ECBBC002F610E /* SnapKitVC.swift */,
-				268627A1201ECFC9002F610E /* SnapLoginView.swift */,
 			);
 			path = SnapKitVC;
 			sourceTree = "<group>";
@@ -92,6 +102,7 @@
 		463CC6A9200084DB00C782E5 /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				263C64E521B661D400F69C38 /* LoginVC */,
 				2686279E201ECB41002F610E /* SnapKitVC */,
 				463CC6BC2000936100C782E5 /* SimpleCollectionView */,
 				463CC6BD2000936100C782E5 /* SimplePickView */,
@@ -271,11 +282,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				463CC6C62000973600C782E5 /* QQTableViewVC.swift in Sources */,
+				263C64E921B6624000F69C38 /* BlankVC.swift in Sources */,
 				463CC6AD200084DB00C782E5 /* ViewController.swift in Sources */,
 				463CC6C82000975200C782E5 /* FlowCollectionVC.swift in Sources */,
 				269B290D2142535700CCC515 /* CollectionReusableHeaderView.swift in Sources */,
 				268627A0201ECBBC002F610E /* SnapKitVC.swift in Sources */,
-				268627A2201ECFC9002F610E /* SnapLoginView.swift in Sources */,
+				263C64E721B6620400F69C38 /* LoginVC.swift in Sources */,
 				269B290B21421F0B00CCC515 /* CustomItem.swift in Sources */,
 				463CC6CA2000976700C782E5 /* DatePickViewVC.swift in Sources */,
 				463CC6AB200084DB00C782E5 /* AppDelegate.swift in Sources */,

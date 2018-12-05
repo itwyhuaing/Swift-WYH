@@ -68,8 +68,10 @@ class DatePickViewVC: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
         // 移除导航栏底部线条
         self.view.backgroundColor = UIColor.black
         self.navigationController?.navigationBar.barTintColor = UIColor.black
-        self.navigationController?.navigationBar.shadowImage = UIImage.init()
-        self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.tintColor    = UIColor.white
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
+        self.navigationController?.navigationBar.shadowImage  = UIImage.init()
+        self.navigationController?.navigationBar.tintColor    = UIColor.white
         self.title = "编辑闹钟"
         
     }

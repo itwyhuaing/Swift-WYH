@@ -16,9 +16,8 @@ class SnapKitVC: UIViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        view.backgroundColor = UIColor.green
+        view.backgroundColor = UIColor.orange
         self.sampleTest5()
-        
     }
     
     override func didReceiveMemoryWarning() {

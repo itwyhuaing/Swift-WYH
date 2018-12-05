@@ -38,12 +38,12 @@ class FlowCollectionVC: UIViewController,UICollectionViewDelegate,UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return 30
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let itemCell:CustomItem     = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomItemID", for: indexPath) as! CustomItem
-        itemCell.backgroundColor    = UIColor.green
+        itemCell.title.text = String(format: "itemCell-%ld", indexPath.row)
         return itemCell
     }
     
@@ -71,6 +71,7 @@ class FlowCollectionVC: UIViewController,UICollectionViewDelegate,UICollectionVi
         layout.minimumInteritemSpacing  = 6.0
         layout.headerReferenceSize      = CGSize(width: sw, height: 35.0)
         layout.itemSize                 = CGSize(width: 66.0, height: 88.0)
+        layout.sectionHeadersPinToVisibleBounds = true;
         let rltV                        = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
         rltV.delegate                   = self
         rltV.dataSource                 = self

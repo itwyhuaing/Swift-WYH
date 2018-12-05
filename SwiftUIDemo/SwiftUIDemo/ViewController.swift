@@ -24,8 +24,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         table.delegate          = self
         table.dataSource        = self
         table.separatorStyle    = .none
-        let arr                 = ["QQTableViewVC","FlowCollectionVC","DatePickViewVC","SnapKitVC"]
-        let des                 = ["TableView 多个 Section 应用","CollectionView 简单应用","UIPickerView 简单应用","SnapKit 约束库 : Masonry 对应"]
+        let arr                 = ["QQTableViewVC","FlowCollectionVC","DatePickViewVC","SnapKitVC","LoginVC"]
+        let des                 = ["TableView 多个 Section 应用","CollectionView 简单应用","UIPickerView 简单应用","SnapKit 约束库 : Masonry 对应","登陆 UI"]
         dataSource.addObjects(from: arr)
         cntData.addObjects(from: des)
     }
