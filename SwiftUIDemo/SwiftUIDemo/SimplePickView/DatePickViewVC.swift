@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DatePickViewVC: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
+class DatePickViewVC: BaseVC,UIPickerViewDelegate,UIPickerViewDataSource {
 
     var dpk = UIPickerView()
     var dataSource = NSMutableArray()
@@ -67,11 +67,11 @@ class DatePickViewVC: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     override func viewWillAppear(_ animated: Bool) {
         // 移除导航栏底部线条
         self.view.backgroundColor = UIColor.black
-        self.navigationController?.navigationBar.barTintColor = UIColor.black
-        self.navigationController?.navigationBar.tintColor    = UIColor.white
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
+        //self.navigationController?.navigationBar.barTintColor = UIColor.black
+        self.navigationController?.navigationBar.tintColor    = UIColor.black
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.black]
         self.navigationController?.navigationBar.shadowImage  = UIImage.init()
-        self.navigationController?.navigationBar.tintColor    = UIColor.white
+        self.navigationController?.navigationBar.tintColor    = UIColor.black
         self.title = "编辑闹钟"
         
     }

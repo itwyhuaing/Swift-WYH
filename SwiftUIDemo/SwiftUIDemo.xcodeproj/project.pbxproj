@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26091730221FDB5800EDB187 /* GlobalDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2609172F221FDB5800EDB187 /* GlobalDevice.swift */; };
+		26091733221FE14E00EDB187 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26091732221FE14E00EDB187 /* BaseVC.swift */; };
+		26091736222005F000EDB187 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26091735222005F000EDB187 /* RegisterVC.swift */; };
 		263C64E721B6620400F69C38 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263C64E621B6620400F69C38 /* LoginVC.swift */; };
 		263C64E921B6624000F69C38 /* BlankVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263C64E821B6624000F69C38 /* BlankVC.swift */; };
 		268627A0201ECBBC002F610E /* SnapKitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2686279F201ECBBC002F610E /* SnapKitVC.swift */; };
@@ -25,6 +28,9 @@
 
 /* Begin PBXFileReference section */
 		13DBB8F1CF67D760B45E60D1 /* Pods-SwiftUIDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftUIDemo/Pods-SwiftUIDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2609172F221FDB5800EDB187 /* GlobalDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDevice.swift; sourceTree = "<group>"; };
+		26091732221FE14E00EDB187 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		26091735222005F000EDB187 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		263C64E621B6620400F69C38 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		263C64E821B6624000F69C38 /* BlankVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankVC.swift; sourceTree = "<group>"; };
 		2686279F201ECBBC002F610E /* SnapKitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitVC.swift; sourceTree = "<group>"; };
@@ -64,11 +70,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2609172E221FDACD00EDB187 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				2609172F221FDB5800EDB187 /* GlobalDevice.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		26091731221FE13900EDB187 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				26091732221FE14E00EDB187 /* BaseVC.swift */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		26091734222004F100EDB187 /* Categary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categary;
+			sourceTree = "<group>";
+		};
 		263C64E521B661D400F69C38 /* LoginVC */ = {
 			isa = PBXGroup;
 			children = (
 				263C64E621B6620400F69C38 /* LoginVC.swift */,
 				263C64E821B6624000F69C38 /* BlankVC.swift */,
+				26091735222005F000EDB187 /* RegisterVC.swift */,
 			);
 			path = LoginVC;
 			sourceTree = "<group>";
@@ -102,6 +132,9 @@
 		463CC6A9200084DB00C782E5 /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				26091734222004F100EDB187 /* Categary */,
+				26091731221FE13900EDB187 /* BaseVC */,
+				2609172E221FDACD00EDB187 /* Class */,
 				263C64E521B661D400F69C38 /* LoginVC */,
 				2686279E201ECB41002F610E /* SnapKitVC */,
 				463CC6BC2000936100C782E5 /* SimpleCollectionView */,
@@ -285,12 +318,15 @@
 				263C64E921B6624000F69C38 /* BlankVC.swift in Sources */,
 				463CC6AD200084DB00C782E5 /* ViewController.swift in Sources */,
 				463CC6C82000975200C782E5 /* FlowCollectionVC.swift in Sources */,
+				26091730221FDB5800EDB187 /* GlobalDevice.swift in Sources */,
 				269B290D2142535700CCC515 /* CollectionReusableHeaderView.swift in Sources */,
 				268627A0201ECBBC002F610E /* SnapKitVC.swift in Sources */,
+				26091733221FE14E00EDB187 /* BaseVC.swift in Sources */,
 				263C64E721B6620400F69C38 /* LoginVC.swift in Sources */,
 				269B290B21421F0B00CCC515 /* CustomItem.swift in Sources */,
 				463CC6CA2000976700C782E5 /* DatePickViewVC.swift in Sources */,
 				463CC6AB200084DB00C782E5 /* AppDelegate.swift in Sources */,
+				26091736222005F000EDB187 /* RegisterVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

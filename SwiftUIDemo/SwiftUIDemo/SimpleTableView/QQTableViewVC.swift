@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QQTableViewVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class QQTableViewVC: BaseVC,UITableViewDelegate,UITableViewDataSource {
 
     // MARK: - 私有属性
     var sectionsData            = NSMutableArray()
@@ -23,6 +23,7 @@ class QQTableViewVC: UIViewController,UITableViewDelegate,UITableViewDataSource 
     }
 
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         // 移除导航栏底部线条
         self.view.backgroundColor = UIColor.white
         self.navigationController?.navigationBar.shadowImage = UIImage.init()

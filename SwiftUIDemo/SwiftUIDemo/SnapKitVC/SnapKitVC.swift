@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class SnapKitVC: UIViewController {
+class SnapKitVC: BaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()

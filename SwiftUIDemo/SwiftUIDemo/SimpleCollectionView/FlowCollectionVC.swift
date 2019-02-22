@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FlowCollectionVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
+class FlowCollectionVC: BaseVC,UICollectionViewDelegate,UICollectionViewDataSource {
     //MARK: - 私有属性
     var sectionsData = NSMutableArray()
     

@@ -1,14 +1,14 @@
 //
-//  BlankVC.swift
+//  RegisterVC.swift
 //  SwiftUIDemo
 //
-//  Created by hnbwyh on 2018/12/4.
-//  Copyright © 2018年 ZhiXing. All rights reserved.
+//  Created by hnbwyh on 2019/2/22.
+//  Copyright © 2019 ZhiXing. All rights reserved.
 //
 
 import UIKit
 
-class BlankVC: BaseVC {
+class RegisterVC: BaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
