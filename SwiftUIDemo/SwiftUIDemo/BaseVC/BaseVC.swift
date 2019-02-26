@@ -20,9 +20,23 @@ class BaseVC: UIViewController {
         self.navigationController?.navigationBar.tintColor      = UIColor.black
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.black]
         self.navigationController?.navigationBar.shadowImage  = UIImage.init()
+        // 左侧返回按钮
+        self.navigationItem.hidesBackButton = true
+        let backBtnItem = UIButton.init(type: .custom)
+        self.modifyBackBtnItem(btnItem: backBtnItem)
+        backBtnItem.setImage(UIImage.init(named: "login_nav_back"), for: .normal)
+        backBtnItem.addTarget(self, action: #selector(backPreVC), for: .touchUpInside)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: backBtnItem)
     }
     
-
+    func modifyBackBtnItem(btnItem:UIButton) -> Void {
+        btnItem.frame = CGRect.init(x: 0, y: 0, width: 30, height: 30)
+    }
+    
+    @objc func backPreVC() -> Void {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
