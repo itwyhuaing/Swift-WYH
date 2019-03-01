@@ -1,24 +1,19 @@
 //
-//  RegisterVC.swift
+//  FindPsdVC.swift
 //  SwiftUIDemo
 //
-//  Created by hnbwyh on 2019/2/22.
+//  Created by hnbwyh on 2019/3/1.
 //  Copyright © 2019 ZhiXing. All rights reserved.
 //
 
 import UIKit
 
-class RegisterVC: BaseVC {
+class FindPsdVC: BaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.title = "注册"
     }
     
 

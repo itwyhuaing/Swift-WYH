@@ -25,10 +25,16 @@ Swift 记录。
 3. FirstVC 单例、KVC
 ```
 
-* AlamofireDemo
+###### AlamofireDemo
 ```
 
 ```
+
+###### SnapKit
+
+* [Swift自动布局SnapKit的详细使用介绍](https://www.jianshu.com/p/2bad53a2a180)
+
+  > 比较简单的使用案例 - 涉及绝对布局、相对布局、布局优先级、更新布局等
 
 
 #### OC与Swift混合开发

@@ -27,6 +27,8 @@ class BaseVC: UIViewController {
         backBtnItem.setImage(UIImage.init(named: "login_nav_back"), for: .normal)
         backBtnItem.addTarget(self, action: #selector(backPreVC), for: .touchUpInside)
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: backBtnItem)
+        self.view.backgroundColor       = UIColor.white
+        self.title                      = NSStringFromClass(type(of: self))
     }
     
     func modifyBackBtnItem(btnItem:UIButton) -> Void {
