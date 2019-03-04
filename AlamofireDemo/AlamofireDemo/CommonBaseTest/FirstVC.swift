@@ -52,7 +52,7 @@ class FirstVC: UITableViewController {
             // https://m.ctrip.com/restapi/soa2/10290/GetAppConfig.json
         case 0:
             let URLString = "https://m.ctrip.com/restapi/soa2/10290/GetAppConfig.json";
-            var para:Parameters = ["head": [
+            let para:Parameters = ["head": [
                 "sauth": "",
                 "extension": [[
                 "name": "appid",
@@ -67,13 +67,18 @@ class FirstVC: UITableViewController {
                 "cid": "12001131710060559645"
                 ]]
             
-            Alamofire.request(URLString,method:.post,parameters:para).responseJSON{ resJson in
-                
+            // 回调在主现场
+            //Alamofire.request(URLString,method:.post,parameters:para).responseJSON{ resJson in
+            
+            // 回调在子线程
+            let utQueue = DispatchQueue.global(qos:.utility)
+            Alamofire.request(URLString, method: .post, parameters: para).responseJSON(queue:utQueue){ resJson in
+            
                 //print(" 携程数据请求 次数：\(0) resJson: \(resJson)")
                 
                     switch resJson.result{
                         case .success:
-                            print(" 携程数据请求 次数：\(0) resJson: \(resJson)")
+                            print(" 携程数据请求 次数：\(0) resJson: \(resJson), 当前线程 :\(Thread.current)")
                         case .failure(let error):
                             print(" 携程数据请求 - failure : \(error) ")
                     }
@@ -148,6 +153,8 @@ class FirstVC: UITableViewController {
             
             break
         case 3:
+            
+            // 下载
             
             Alamofire.download("https://httpbin.org/image/png")
                 .downloadProgress { progress in
