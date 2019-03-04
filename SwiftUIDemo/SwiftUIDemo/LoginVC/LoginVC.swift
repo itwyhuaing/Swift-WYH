@@ -80,7 +80,7 @@ class LoginVC: BaseVC,UITextFieldDelegate {
         self.logo.snp.makeConstraints { (make) in
             make.width.height.equalTo(80.0)
             make.centerX.equalTo(view)
-            make.topMargin.equalTo(88.0)
+            make.topMargin.equalTo(26.0)
         }
         
         self.them.snp.makeConstraints { (make) in
@@ -161,7 +161,7 @@ class LoginVC: BaseVC,UITextFieldDelegate {
         print("\n 每次输入调用 \n")
         let usText:String = self.UsrCount.text ?? ""
         let pdText:String = self.Psd.text ?? ""
-        if usText.count > 6 && pdText.count > 6 {
+        if usText.count >= 6 && pdText.count >= 6 {
             self.loginBtn.alpha = 1.0
         }else{
             self.loginBtn.alpha = 0.5
