@@ -146,7 +146,7 @@ class FirstVC: UITableViewController {
     }
     
     func simpleJsonParserExample() -> Void {
-        let URLString = "https://www.hinabian.com/user_register/appGetMobileNation88"
+        let URLString = "https://www.hinabian.com/user_register/appGetMobileNation"
         Alamofire.request(URLString, method: .post).responseJSON { (resJson) in
             switch resJson.result {
             case .success:

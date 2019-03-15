@@ -15,8 +15,9 @@
 		26408BDB202453E6006B09D2 /* TableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26408BD8202453E6006B09D2 /* TableVC.swift */; };
 		26408BDC202453E6006B09D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26408BD9202453E6006B09D2 /* ViewController.swift */; };
 		26408BDD202453E6006B09D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26408BDA202453E6006B09D2 /* AppDelegate.swift */; };
-		264FA01F223B9301006E5B1B /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264FA01C223B9301006E5B1B /* SecondVC.swift */; };
 		264FA020223B9301006E5B1B /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264FA01E223B9301006E5B1B /* FirstVC.swift */; };
+		264FA025223B9DFF006E5B1B /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264FA024223B9DFF006E5B1B /* SecondVC.swift */; };
+		264FA02B223B9E74006E5B1B /* ExInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264FA02A223B9E74006E5B1B /* ExInfoModel.swift */; };
 		2932CE9213418FEB21808A21 /* Pods_AlamofireDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0994301A9FD92CA41CD1C595 /* Pods_AlamofireDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,8 +54,9 @@
 		26408BD8202453E6006B09D2 /* TableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableVC.swift; sourceTree = "<group>"; };
 		26408BD9202453E6006B09D2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		26408BDA202453E6006B09D2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		264FA01C223B9301006E5B1B /* SecondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		264FA01E223B9301006E5B1B /* FirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		264FA024223B9DFF006E5B1B /* SecondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		264FA02A223B9E74006E5B1B /* ExInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExInfoModel.swift; sourceTree = "<group>"; };
 		BBD4449AD66CB661AD2F5F0F /* Pods-AlamofireDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlamofireDemo/Pods-AlamofireDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DB045B62C8E783ED9B3C1D12 /* Pods-AlamofireDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamofireDemo/Pods-AlamofireDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,8 +152,9 @@
 		26408BD6202453E6006B09D2 /* CommonBaseTest */ = {
 			isa = PBXGroup;
 			children = (
+				264FA029223B9E74006E5B1B /* Model */,
+				264FA023223B9DFF006E5B1B /* DataParserEx */,
 				264FA01D223B9301006E5B1B /* AlamofireSimpleEX */,
-				264FA01B223B9301006E5B1B /* Other */,
 			);
 			path = CommonBaseTest;
 			sourceTree = "<group>";
@@ -166,20 +169,28 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		264FA01B223B9301006E5B1B /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				264FA01C223B9301006E5B1B /* SecondVC.swift */,
-			);
-			path = Other;
-			sourceTree = "<group>";
-		};
 		264FA01D223B9301006E5B1B /* AlamofireSimpleEX */ = {
 			isa = PBXGroup;
 			children = (
 				264FA01E223B9301006E5B1B /* FirstVC.swift */,
 			);
 			path = AlamofireSimpleEX;
+			sourceTree = "<group>";
+		};
+		264FA023223B9DFF006E5B1B /* DataParserEx */ = {
+			isa = PBXGroup;
+			children = (
+				264FA024223B9DFF006E5B1B /* SecondVC.swift */,
+			);
+			path = DataParserEx;
+			sourceTree = "<group>";
+		};
+		264FA029223B9E74006E5B1B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				264FA02A223B9E74006E5B1B /* ExInfoModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		4EA305AB9E8B2C972521E562 /* Frameworks */ = {
@@ -383,8 +394,9 @@
 			files = (
 				26408BDD202453E6006B09D2 /* AppDelegate.swift in Sources */,
 				264FA020223B9301006E5B1B /* FirstVC.swift in Sources */,
+				264FA02B223B9E74006E5B1B /* ExInfoModel.swift in Sources */,
+				264FA025223B9DFF006E5B1B /* SecondVC.swift in Sources */,
 				26408BDC202453E6006B09D2 /* ViewController.swift in Sources */,
-				264FA01F223B9301006E5B1B /* SecondVC.swift in Sources */,
 				26408BDB202453E6006B09D2 /* TableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
