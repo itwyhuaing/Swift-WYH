@@ -16,8 +16,8 @@ class ViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        //let tvc = ThirdVC()
-        let tvc = FirstVC()
+        let tvc = ThirdVC()
+        //let tvc = FirstVC()
         self.navigationController?.pushViewController(tvc, animated: true)
         
     }

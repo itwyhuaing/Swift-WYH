@@ -43,6 +43,9 @@ class SecondVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
         case 0:
             self.valueWithDicInfo()
             break
+        case 1:
+            self.simpleSwiftyJsonEx()
+            break
             
         default:
             break
@@ -63,7 +66,7 @@ class SecondVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
     lazy var thems:[String] = {
         () -> [String] in
-        let rlt:[String] = ["字典赋值"]
+        let rlt:[String] = ["字典赋值","SwiftyJson"]
         return rlt
     }()
     
@@ -72,7 +75,7 @@ class SecondVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     func valueWithDicInfo() -> Void {
         let datas = NSMutableArray.init()
         for index in 1...2 {
-            let tmpD = index
+            let tmpD = "\(index)"
             let tmpS = "showstring\(index)"
             let dict = [
                 "tid":tmpD,
@@ -80,18 +83,28 @@ class SecondVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
                 ] as [String : Any]
             datas.add(dict)
             
-            // 1. 方式
-            //let f:ExInfoModel  = ExInfoModel.init()
-            //f.setValuesForKeys(dict)
-            
-            // 2. 方式
-            let f = ExInfoModel(dic: dict)
-            
+            let f:ExInfoModel  = ExInfoModel.init()
+            f.setValuesForKeys(dict)
             print(" \n f.tid = \(f.tid) f.showstring = \(f.showstring) \n ")
+            
         }
         
         print(" \n 数据测试结束 \n ")
         
     }
-
+    
+    
+    func simpleSwiftyJsonEx() -> Void {
+        print(" \n simpleSwiftyJsonEx \n ")
+        let stu = ("wyh",28,170.8)
+        print("name:\(stu.0),age:\(stu.1),height:\(stu.2)")
+        
+        let apt:[String:String] = ["k1":"V1","k2":"V2"]
+        for (i,v) in apt.enumerated() {
+            print("\n \(i) , \(v) \n")
+        }
+        
+    }
+    
+    
 }

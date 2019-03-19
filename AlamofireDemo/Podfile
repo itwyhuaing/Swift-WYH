@@ -2,4 +2,5 @@ platform :ios, '9.0'
 use_frameworks!
 target 'AlamofireDemo' do
  pod 'Alamofire', '~> 4.6.0'
+ pod 'SwiftyJSON', '~> 4.2.0'
 end

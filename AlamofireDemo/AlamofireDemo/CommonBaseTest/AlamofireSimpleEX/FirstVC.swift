@@ -8,11 +8,12 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 class FirstVC: UITableViewController {
 
     
-    var dataSource = ["简单网络请求","简单数据解析",
+    var dataSource = ["简单网络请求","简单数据解析 - SwiftyJSON 简单应用",
                       "响应序列化类型","链式响应(同一请求的不同序列化)",
                       "响应队列","响应队列 - 组队列、同一队列 (notify)",
                       "下载","上传"]
@@ -150,12 +151,13 @@ class FirstVC: UITableViewController {
         Alamofire.request(URLString, method: .post).responseJSON { (resJson) in
             switch resJson.result {
             case .success:
-                print(" \n 数据测试 - resJon : \(resJson)\n ")
-                break;
+                let json = JSON(resJson.value)
+                print(" \n 数据测试 - resJon : \(json["data","country_telid",0,"id"]) \n ") // .rawDictionary["data","country_telid"]
+                break
                 
             case .failure:
                 print(" \n 数据测试 - error : \(resJson.error)\n ")
-                break;
+                break
             }
             
         }

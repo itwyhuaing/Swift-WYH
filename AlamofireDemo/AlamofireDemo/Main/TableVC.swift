@@ -11,7 +11,7 @@ import UIKit
 class TableVC: UITableViewController {
 
     //
-    var dataSource = ["Alamofire 简单应用","数据解析 - setValuesForKeys未调试 OK "]
+    var dataSource = ["Alamofire 简单应用","数据解析 - setValuesForKeys"]
     
     
     override func viewDidLoad() {
