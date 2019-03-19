@@ -29,8 +29,16 @@ Swift 记录。
 * AlamofireDemo
 
 ```
+1. Alamofire 简单应用
+2. 数据解析 SwiftyJSON
+```
+
+* TodayNews / ZhiXingJianYan
 
 ```
+今日头条仿写事例 / 仿写应用
+```
+
 
 #### 常用第三方基础库
 
