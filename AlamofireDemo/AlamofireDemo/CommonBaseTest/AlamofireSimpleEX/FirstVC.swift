@@ -8,12 +8,11 @@
 
 import UIKit
 import Alamofire
-import SwiftyJSON
 
 class FirstVC: UITableViewController {
 
     
-    var dataSource = ["简单网络请求","简单数据解析 - SwiftyJSON 简单应用",
+    var dataSource = ["简单网络请求",
                       "响应序列化类型","链式响应(同一请求的不同序列化)",
                       "响应队列","响应队列 - 组队列、同一队列 (notify)",
                       "下载","上传"]
@@ -51,35 +50,30 @@ class FirstVC: UITableViewController {
             break
             
         case 1:
-            self.simpleJsonParserExample()
-            
-            break
-            
-        case 2:
             self.responseType()
 
             break
-        case 3:
+        case 2:
             self.seriesResponse()
             
             break
-        case 4:
+        case 3:
             self.responseQueue()
             
             break
-        case 5:
+        case 4:
             self.responseGroupTheQueue()
             
             break
-        case 6:
+        case 5:
             self.downLoadSource()
             
             break
-        case 7:
+        case 6:
             self.uploadSource()
             
             break
-        case 8:
+        case 7:
             
             
             break
@@ -141,25 +135,6 @@ class FirstVC: UITableViewController {
                 
             }
 
-        }
-        
-        
-    }
-    
-    func simpleJsonParserExample() -> Void {
-        let URLString = "https://www.hinabian.com/user_register/appGetMobileNation"
-        Alamofire.request(URLString, method: .post).responseJSON { (resJson) in
-            switch resJson.result {
-            case .success:
-                let json = JSON(resJson.value)
-                print(" \n 数据测试 - resJon : \(json["data","country_telid",0,"id"]) \n ") // .rawDictionary["data","country_telid"]
-                break
-                
-            case .failure:
-                print(" \n 数据测试 - error : \(resJson.error)\n ")
-                break
-            }
-            
         }
         
         

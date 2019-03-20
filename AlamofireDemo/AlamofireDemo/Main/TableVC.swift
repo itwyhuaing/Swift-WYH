@@ -11,7 +11,7 @@ import UIKit
 class TableVC: UITableViewController {
 
     //
-    var dataSource = ["Alamofire 简单应用","数据解析 - setValuesForKeys"]
+    var dataSource = ["关键词","Alamofire 简单应用","数据解析"]
     
     
     override func viewDidLoad() {
@@ -45,10 +45,14 @@ class TableVC: UITableViewController {
         
         switch indexPath.row {
         case 0:
+            vc = KeyWordsVC()
+            break
+            
+        case 1:
             vc = FirstVC()
         break
             
-        case 1:
+        case 2:
             vc = SecondVC()
         break
             

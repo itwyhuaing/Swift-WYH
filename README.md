@@ -29,8 +29,11 @@ Swift 记录。
 * AlamofireDemo
 
 ```
-1. Alamofire 简单应用
-2. 数据解析 SwiftyJSON
+1. 关键词
+2. Alamofire 简单应用
+3. 数据解析 SwiftyJSON
+4. 字典转模型 - 原生实现/Decodable、HandyJSON
+
 ```
 
 * TodayNews / ZhiXingJianYan

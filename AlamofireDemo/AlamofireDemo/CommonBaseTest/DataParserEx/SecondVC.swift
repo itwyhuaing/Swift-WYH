@@ -7,9 +7,30 @@
 //
 
 import UIKit
-//import ExInfoModel
+import Alamofire
+import SwiftyJSON
+
 
 class SecondVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
+    
+    // 不能确定这些字断有值的，需要加可选，不然解析不成功
+    public struct CodableModel : Decodable {
+        var user:String
+        var id:String
+        var model:String?
+        
+        // 对应 data.json 数据文件中字段的 key 值，如果都是一样可以不写
+        enum CodingKeys:String,CodingKey {
+            case id     = "deciceId"
+            case user   = "name"
+            case model
+        }
+        
+        
+    }
+    
+    
+    
     
     // MARK: -life cycle
     override func viewDidLoad() {
@@ -41,10 +62,19 @@ class SecondVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: false)
         switch indexPath.row {
         case 0:
+            self.simpleJsonParserExample()
+            break
+            
+        case 1:
             self.valueWithDicInfo()
             break
-        case 1:
-            self.simpleSwiftyJsonEx()
+            
+        case 2:
+            self.deCodableModelExample()
+            break
+            
+        case 3:
+            self.handyJsonToModelExample()
             break
             
         default:
@@ -66,7 +96,8 @@ class SecondVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
     lazy var thems:[String] = {
         () -> [String] in
-        let rlt:[String] = ["字典赋值","SwiftyJson"]
+        let rlt:[String] = ["SwiftyJSON:链式取值并非转Model","Dic(setValuesForKeys)Model",
+                            "Dic(原生实现/Decodable)Model","Dic(HandyJSON)Model"]
         return rlt
     }()
     
@@ -94,15 +125,40 @@ class SecondVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     }
     
     
-    func simpleSwiftyJsonEx() -> Void {
-        print(" \n simpleSwiftyJsonEx \n ")
-        let stu = ("wyh",28,170.8)
-        print("name:\(stu.0),age:\(stu.1),height:\(stu.2)")
-        
-        let apt:[String:String] = ["k1":"V1","k2":"V2"]
-        for (i,v) in apt.enumerated() {
-            print("\n \(i) , \(v) \n")
+    func simpleJsonParserExample() -> Void {
+        let URLString = "https://www.hinabian.com/user_register/appGetMobileNation"
+        Alamofire.request(URLString, method: .post).responseJSON { (resJson) in
+            switch resJson.result {
+            case .success:
+                let json = JSON(resJson.value)
+                print(" \n 数据测试 - resJon : \(json["data","country_telid",0,"id"]) \n ") // .rawDictionary["data","country_telid"]
+                break
+                
+            case .failure:
+                print(" \n 数据测试 - error : \(resJson.error)\n ")
+                break
+            }
+            
         }
+    }
+    
+    
+    func deCodableModelExample() -> Void {
+        // [swift json转模型](https://www.jianshu.com/p/c4147745776c)
+        guard let url = Bundle.main.path(forResource: "data", ofType: "json") else {
+                                                                                print("  \n url 没有数据  \n ")
+                                                                                return }
+        let data = try?Data(contentsOf: URL(fileURLWithPath: url), options: Data.ReadingOptions.alwaysMapped)
+        guard let arr = try?JSONDecoder().decode([CodableModel].self, from: data!) else {
+            print("  \n Arr 没有数据  \n ")
+            return
+        }
+        print(" \n 数据测试 \n Arr = \(arr)  \n  Arr[0] = \(arr[0]) \n Arr[1] = \(arr[1]) \n Arr[0].id = \(arr[0].id) \n Arr[1].model = \(String(describing: arr[1].model))  \n ")
+        
+    }
+    
+    
+    func handyJsonToModelExample() -> Void {
         
     }
     
