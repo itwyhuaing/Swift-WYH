@@ -18,6 +18,10 @@ class TableVC: UITableViewController {
         super.viewDidLoad()
         self.tableView.separatorStyle = .none
         self.title = NSStringFromClass(self.classForCoder).components(separatedBy: ".").last
+        
+        // iOS11 新特性
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        
     }
 
     // MARK: - Table view data source
@@ -29,7 +33,10 @@ class TableVC: UITableViewController {
         return dataSource.count
     }
 
-    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
+    }
+        
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "cellID")
         if cell == nil {

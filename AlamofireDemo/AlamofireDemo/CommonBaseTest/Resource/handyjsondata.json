@@ -1,0 +1,9 @@
+ {
+    "id":1234567,
+    "name":"Kitty",
+    "frd":["Tom", "Jack", "Lily", "Black"],
+    "wgt":15.34,
+    "alv":false,
+    "clr":"white",
+  }
+ 

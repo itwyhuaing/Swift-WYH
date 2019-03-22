@@ -21,6 +21,8 @@ class FirstVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "FirstVC"
+        // iOS11 新特性
+        self.navigationController?.navigationBar.prefersLargeTitles = true
         
     }
 
@@ -33,6 +35,10 @@ class FirstVC: UITableViewController {
         return dataSource.count
     }
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "cellID")
         if cell == nil {

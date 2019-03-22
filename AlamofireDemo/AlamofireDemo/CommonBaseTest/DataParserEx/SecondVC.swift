@@ -9,25 +9,11 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
-
+import HandyJSON
 
 class SecondVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
-    // 不能确定这些字断有值的，需要加可选，不然解析不成功
-    public struct CodableModel : Decodable {
-        var user:String
-        var id:String
-        var model:String?
-        
-        // 对应 data.json 数据文件中字段的 key 值，如果都是一样可以不写
-        enum CodingKeys:String,CodingKey {
-            case id     = "deciceId"
-            case user   = "name"
-            case model
-        }
-        
-        
-    }
+    
     
     
     
@@ -36,6 +22,8 @@ class SecondVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(self.table)
+        self.navigationItem.largeTitleDisplayMode = .never
+        
     }
 
     
@@ -97,7 +85,8 @@ class SecondVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     lazy var thems:[String] = {
         () -> [String] in
         let rlt:[String] = ["SwiftyJSON:链式取值并非转Model","Dic(setValuesForKeys)Model",
-                            "Dic(原生实现/Decodable)Model","Dic(HandyJSON)Model"]
+                            "Dic(原生实现/Decodable)Model","Dic(HandyJSON)Model",
+                            "Dic(ObjectMapper)Model"]
         return rlt
     }()
     
@@ -145,7 +134,7 @@ class SecondVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
     func deCodableModelExample() -> Void {
         // [swift json转模型](https://www.jianshu.com/p/c4147745776c)
-        guard let url = Bundle.main.path(forResource: "data", ofType: "json") else {
+        guard let url = Bundle.main.path(forResource: "decodabledata", ofType: "json") else {
                                                                                 print("  \n url 没有数据  \n ")
                                                                                 return }
         let data = try?Data(contentsOf: URL(fileURLWithPath: url), options: Data.ReadingOptions.alwaysMapped)
@@ -159,6 +148,17 @@ class SecondVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
     
     func handyJsonToModelExample() -> Void {
+        guard let url = Bundle.main.path(forResource: "handyjsondata", ofType: "json") else {
+                                                                                print("  \n url 没有数据  \n ")
+                                                                                return }
+        let jsonString = try?String.init(contentsOf: URL(fileURLWithPath: url))
+        if let hjd = HandyJsonModel.deserialize(from:jsonString) {
+            print("\n \(Bool(hjd.alv)) \n \(hjd.frd) \n \(hjd.clr) \n \(hjd.wgt) \n")
+        }
+    }
+    
+    
+    func objectMapperToModelExample() -> Void {
         
     }
     

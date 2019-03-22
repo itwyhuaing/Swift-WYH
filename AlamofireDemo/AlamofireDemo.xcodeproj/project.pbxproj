@@ -19,8 +19,10 @@
 		264FA025223B9DFF006E5B1B /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264FA024223B9DFF006E5B1B /* SecondVC.swift */; };
 		264FA02B223B9E74006E5B1B /* ExInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264FA02A223B9E74006E5B1B /* ExInfoModel.swift */; };
 		26B68B872241D3A9006E3DCA /* JsonInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B68B862241D3A9006E3DCA /* JsonInfoModel.swift */; };
-		26B68B8E22420C52006E3DCA /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 26B68B8D22420C52006E3DCA /* data.json */; };
 		26B68B9022420C7C006E3DCA /* KeyWordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B68B8F22420C7C006E3DCA /* KeyWordsVC.swift */; };
+		26B68B9322433977006E3DCA /* decodabledata.json in Resources */ = {isa = PBXBuildFile; fileRef = 26B68B9122433977006E3DCA /* decodabledata.json */; };
+		26B68B9422433977006E3DCA /* handyjsondata.json in Resources */ = {isa = PBXBuildFile; fileRef = 26B68B9222433977006E3DCA /* handyjsondata.json */; };
+		26B68B9822433E9B006E3DCA /* HandyJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B68B9722433E9B006E3DCA /* HandyJsonModel.swift */; };
 		2932CE9213418FEB21808A21 /* Pods_AlamofireDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0994301A9FD92CA41CD1C595 /* Pods_AlamofireDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,8 +63,10 @@
 		264FA024223B9DFF006E5B1B /* SecondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		264FA02A223B9E74006E5B1B /* ExInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExInfoModel.swift; sourceTree = "<group>"; };
 		26B68B862241D3A9006E3DCA /* JsonInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonInfoModel.swift; sourceTree = "<group>"; };
-		26B68B8D22420C52006E3DCA /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		26B68B8F22420C7C006E3DCA /* KeyWordsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyWordsVC.swift; sourceTree = "<group>"; };
+		26B68B9122433977006E3DCA /* decodabledata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = decodabledata.json; sourceTree = "<group>"; };
+		26B68B9222433977006E3DCA /* handyjsondata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = handyjsondata.json; sourceTree = "<group>"; };
+		26B68B9722433E9B006E3DCA /* HandyJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandyJsonModel.swift; sourceTree = "<group>"; };
 		BBD4449AD66CB661AD2F5F0F /* Pods-AlamofireDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlamofireDemo/Pods-AlamofireDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DB045B62C8E783ED9B3C1D12 /* Pods-AlamofireDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamofireDemo/Pods-AlamofireDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,8 +131,8 @@
 		26408BA5202444BA006B09D2 /* AlamofireDemo */ = {
 			isa = PBXGroup;
 			children = (
-				26408BD6202453E6006B09D2 /* CommonBaseTest */,
 				26408BD7202453E6006B09D2 /* Main */,
+				26408BD6202453E6006B09D2 /* CommonBaseTest */,
 				26408BAA202444BA006B09D2 /* Main.storyboard */,
 				26408BAD202444BA006B09D2 /* Assets.xcassets */,
 				26408BAF202444BA006B09D2 /* LaunchScreen.storyboard */,
@@ -198,6 +202,7 @@
 			children = (
 				264FA02A223B9E74006E5B1B /* ExInfoModel.swift */,
 				26B68B862241D3A9006E3DCA /* JsonInfoModel.swift */,
+				26B68B9722433E9B006E3DCA /* HandyJsonModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -213,7 +218,8 @@
 		26B68B8C22420C52006E3DCA /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				26B68B8D22420C52006E3DCA /* data.json */,
+				26B68B9122433977006E3DCA /* decodabledata.json */,
+				26B68B9222433977006E3DCA /* handyjsondata.json */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -338,7 +344,8 @@
 				26408BB1202444BA006B09D2 /* LaunchScreen.storyboard in Resources */,
 				26408BAE202444BA006B09D2 /* Assets.xcassets in Resources */,
 				26408BAC202444BA006B09D2 /* Main.storyboard in Resources */,
-				26B68B8E22420C52006E3DCA /* data.json in Resources */,
+				26B68B9422433977006E3DCA /* handyjsondata.json in Resources */,
+				26B68B9322433977006E3DCA /* decodabledata.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,11 +374,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AlamofireDemo/Pods-AlamofireDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +415,7 @@
 			files = (
 				26408BDD202453E6006B09D2 /* AppDelegate.swift in Sources */,
 				26B68B872241D3A9006E3DCA /* JsonInfoModel.swift in Sources */,
+				26B68B9822433E9B006E3DCA /* HandyJsonModel.swift in Sources */,
 				264FA020223B9301006E5B1B /* FirstVC.swift in Sources */,
 				264FA02B223B9E74006E5B1B /* ExInfoModel.swift in Sources */,
 				26B68B9022420C7C006E3DCA /* KeyWordsVC.swift in Sources */,
@@ -581,6 +591,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 329C98NCKN;
 				INFOPLIST_FILE = AlamofireDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dighouse.dighouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -597,6 +608,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 329C98NCKN;
 				INFOPLIST_FILE = AlamofireDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dighouse.dighouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
