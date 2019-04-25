@@ -15,6 +15,7 @@
 		268627A0201ECBBC002F610E /* SnapKitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2686279F201ECBBC002F610E /* SnapKitVC.swift */; };
 		269B290B21421F0B00CCC515 /* CustomItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269B290A21421F0B00CCC515 /* CustomItem.swift */; };
 		269B290D2142535700CCC515 /* CollectionReusableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269B290C2142535700CCC515 /* CollectionReusableHeaderView.swift */; };
+		26B442FA22706BB600C78989 /* FlowCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B442F922706BB600C78989 /* FlowCollectionVC.swift */; };
 		26D687912229146F00407632 /* FindPsdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D687902229146F00407632 /* FindPsdVC.swift */; };
 		463CC6AB200084DB00C782E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463CC6AA200084DB00C782E5 /* AppDelegate.swift */; };
 		463CC6AD200084DB00C782E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463CC6AC200084DB00C782E5 /* ViewController.swift */; };
@@ -22,7 +23,6 @@
 		463CC6B2200084DB00C782E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 463CC6B1200084DB00C782E5 /* Assets.xcassets */; };
 		463CC6B5200084DB00C782E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 463CC6B3200084DB00C782E5 /* LaunchScreen.storyboard */; };
 		463CC6C62000973600C782E5 /* QQTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463CC6C52000973600C782E5 /* QQTableViewVC.swift */; };
-		463CC6C82000975200C782E5 /* FlowCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463CC6C72000975200C782E5 /* FlowCollectionVC.swift */; };
 		463CC6CA2000976700C782E5 /* DatePickViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463CC6C92000976700C782E5 /* DatePickViewVC.swift */; };
 		EA45F079FEFE6EE5DA56A66F /* Pods_SwiftUIDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5962911BB51AEE5E7A507C7C /* Pods_SwiftUIDemo.framework */; };
 /* End PBXBuildFile section */
@@ -37,6 +37,7 @@
 		2686279F201ECBBC002F610E /* SnapKitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitVC.swift; sourceTree = "<group>"; };
 		269B290A21421F0B00CCC515 /* CustomItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomItem.swift; sourceTree = "<group>"; };
 		269B290C2142535700CCC515 /* CollectionReusableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableHeaderView.swift; sourceTree = "<group>"; };
+		26B442F922706BB600C78989 /* FlowCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCollectionVC.swift; sourceTree = "<group>"; };
 		26D687902229146F00407632 /* FindPsdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPsdVC.swift; sourceTree = "<group>"; };
 		463CC6A7200084DB00C782E5 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		463CC6AA200084DB00C782E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +47,6 @@
 		463CC6B4200084DB00C782E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		463CC6B6200084DB00C782E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		463CC6C52000973600C782E5 /* QQTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QQTableViewVC.swift; sourceTree = "<group>"; };
-		463CC6C72000975200C782E5 /* FlowCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCollectionVC.swift; sourceTree = "<group>"; };
 		463CC6C92000976700C782E5 /* DatePickViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickViewVC.swift; sourceTree = "<group>"; };
 		5962911BB51AEE5E7A507C7C /* Pods_SwiftUIDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0F5FF97F50E152451DE5793 /* Pods-SwiftUIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftUIDemo/Pods-SwiftUIDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 		463CC6BC2000936100C782E5 /* SimpleCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				463CC6C72000975200C782E5 /* FlowCollectionVC.swift */,
+				26B442F922706BB600C78989 /* FlowCollectionVC.swift */,
 				269B290A21421F0B00CCC515 /* CustomItem.swift */,
 				269B290C2142535700CCC515 /* CollectionReusableHeaderView.swift */,
 			);
@@ -321,11 +321,11 @@
 				263C64E921B6624000F69C38 /* BlankVC.swift in Sources */,
 				463CC6AD200084DB00C782E5 /* ViewController.swift in Sources */,
 				26D687912229146F00407632 /* FindPsdVC.swift in Sources */,
-				463CC6C82000975200C782E5 /* FlowCollectionVC.swift in Sources */,
 				26091730221FDB5800EDB187 /* GlobalDevice.swift in Sources */,
 				269B290D2142535700CCC515 /* CollectionReusableHeaderView.swift in Sources */,
 				268627A0201ECBBC002F610E /* SnapKitVC.swift in Sources */,
 				26091733221FE14E00EDB187 /* BaseVC.swift in Sources */,
+				26B442FA22706BB600C78989 /* FlowCollectionVC.swift in Sources */,
 				263C64E721B6620400F69C38 /* LoginVC.swift in Sources */,
 				269B290B21421F0B00CCC515 /* CustomItem.swift in Sources */,
 				463CC6CA2000976700C782E5 /* DatePickViewVC.swift in Sources */,

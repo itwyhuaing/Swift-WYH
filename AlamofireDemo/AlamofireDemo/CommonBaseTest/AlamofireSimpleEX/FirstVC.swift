@@ -258,7 +258,30 @@ class FirstVC: UITableViewController {
     }
     
     func uploadSource() -> Void {
-        
+        // iOS系统右滑返回手势问题及解决方案 https://www.jianshu.com/p/142d0f4cc482
+        let URLString = "https://www.jianshu.com/p/142d0f4cc482" 
+        for idx in 1...2 {
+            Alamofire.request(URLString)
+                .responseJSON(completionHandler: { (resJson) in
+                    
+                    switch resJson.result {
+                    case .success:
+                        print(" \n responseJSON测试点 \(idx) - success - \(Thread.current) \n ")
+                        break
+                        
+                    case .failure:
+                        print(" \n responseJSON测试点 \(idx) - failure - \(resJson.error) \n ")
+                        break
+                    }
+                })
+            
+            .response(completionHandler: { (res) in
+                 print(" \n response测试点 - \(Thread.current) \n ")
+            })
+            
+            
+            
+        }
         
     }
     
