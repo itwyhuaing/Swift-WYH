@@ -8,14 +8,14 @@ Swift 记录。
 * [SwiftGuide - 合集](https://github.com/ipader/SwiftGuide)
 
 #### Swift Demo
-* [SwiftUIDemo](https://github.com/itwyhuaing/Swift-WYH/tree/master/SwiftUIDemo)
+* [SWFTDemo](https://github.com/itwyhuaing/Swift-WYH/tree/master/SwiftUIDemo)
 
 ```
 1. TableView 简单应用 - QQ 好友列表
 2. UICollectionView 简单应用 - 支付宝应用功能入口
 3. UIPickerView 简单应用 - iPhone 时间设置
-4. SnapKitVC UI 约束库
-5. 登录页
+4. 登录页
+5. SnapKitVC UI 约束库
 ```
 
 * [SwiftProDemoOne](https://github.com/itwyhuaing/Swift-WYH/tree/master/SwiftProDemoOne)
