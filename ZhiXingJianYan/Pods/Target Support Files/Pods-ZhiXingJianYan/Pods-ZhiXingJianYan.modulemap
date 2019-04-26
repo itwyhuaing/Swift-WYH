@@ -1,6 +1,0 @@
-framework module Pods_ZhiXingJianYan {
-  umbrella header "Pods-ZhiXingJianYan-umbrella.h"
-
-  export *
-  module * { export * }
-}

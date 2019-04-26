@@ -1,0 +1,20 @@
+PODS:
+  - SnapKit (4.2.0)
+  - ZHRefresh (0.1.9)
+
+DEPENDENCIES:
+  - SnapKit (~> 4.2.0)
+  - ZHRefresh (~> 0.1.9)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SnapKit
+    - ZHRefresh
+
+SPEC CHECKSUMS:
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  ZHRefresh: 876b409acc73dbd10ea4e7967e1f4aea2ef44a53
+
+PODFILE CHECKSUM: bddaf0dadee9c2c11c48d81dce4c63b84ecf210e
+
+COCOAPODS: 1.5.3

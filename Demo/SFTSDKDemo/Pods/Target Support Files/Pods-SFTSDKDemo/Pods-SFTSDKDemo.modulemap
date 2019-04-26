@@ -1,0 +1,6 @@
+framework module Pods_SFTSDKDemo {
+  umbrella header "Pods-SFTSDKDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
