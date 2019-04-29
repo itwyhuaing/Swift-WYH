@@ -43,7 +43,7 @@ class CoreAnimationVC: UIViewController,CAAnimationDelegate {
         testView.layer.borderWidth = 5
         testView.layer.borderColor = UIColor.red.cgColor
     
-        //设置阴影，这里需要注意，如果masksToBounds为true，阴影会被裁剪掉（所以，一般如果你既想要圆形图片，又想要阴影，那么是需要将图片进行裁剪的）
+        //设置阴影，这里需要注意，如果 masksToBounds 为true，阴影会被裁剪掉（所以，一般如果你既想要圆形图片，又想要阴影，那么是需要将图片进行裁剪的）
         testView.layer.shadowOpacity = 0.5
         testView.layer.shadowOffset  = CGSize.init(width: 0.0, height: 2.0)
         testView.layer.shadowRadius  = 5.0

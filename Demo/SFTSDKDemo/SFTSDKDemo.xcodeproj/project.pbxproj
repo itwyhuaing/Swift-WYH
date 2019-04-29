@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2638782E22757B9D00A853E7 /* ScaleHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2638782D22757B9D00A853E7 /* ScaleHeaderVC.swift */; };
+		2638783022757C7100A853E7 /* FGHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2638782F22757C7100A853E7 /* FGHeaderView.swift */; };
+		263878342275ABD000A853E7 /* DelegateExVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263878332275ABD000A853E7 /* DelegateExVC.swift */; };
+		263878372275B31B00A853E7 /* MethodExVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263878362275B31B00A853E7 /* MethodExVC.swift */; };
+		2638783C22769A3800A853E7 /* InfoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2638783B22769A3800A853E7 /* InfoListVC.swift */; };
+		2638783E22769A4A00A853E7 /* ExchangeMethodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2638783D22769A4A00A853E7 /* ExchangeMethodVC.swift */; };
+		2638784022769A5900A853E7 /* AssociatedInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2638783F22769A5900A853E7 /* AssociatedInfoVC.swift */; };
+		2638784222769B6B00A853E7 /* RunTimeTestObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2638784122769B6B00A853E7 /* RunTimeTestObj.swift */; };
+		263878442276DC4000A853E7 /* VCMethodHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263878432276DC4000A853E7 /* VCMethodHook.swift */; };
 		263EFEEB2272975000D06995 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 263EFEE92272975000D06995 /* Main.storyboard */; };
 		263EFEED2272975100D06995 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 263EFEEC2272975100D06995 /* Assets.xcassets */; };
 		263EFEF02272975100D06995 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 263EFEEE2272975100D06995 /* LaunchScreen.storyboard */; };
@@ -28,6 +37,15 @@
 
 /* Begin PBXFileReference section */
 		154BF904902E3AF1D131D0EF /* Pods_SFTSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFTSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2638782D22757B9D00A853E7 /* ScaleHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleHeaderVC.swift; sourceTree = "<group>"; };
+		2638782F22757C7100A853E7 /* FGHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FGHeaderView.swift; sourceTree = "<group>"; };
+		263878332275ABD000A853E7 /* DelegateExVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateExVC.swift; sourceTree = "<group>"; };
+		263878362275B31B00A853E7 /* MethodExVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodExVC.swift; sourceTree = "<group>"; };
+		2638783B22769A3800A853E7 /* InfoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoListVC.swift; sourceTree = "<group>"; };
+		2638783D22769A4A00A853E7 /* ExchangeMethodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeMethodVC.swift; sourceTree = "<group>"; };
+		2638783F22769A5900A853E7 /* AssociatedInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedInfoVC.swift; sourceTree = "<group>"; };
+		2638784122769B6B00A853E7 /* RunTimeTestObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunTimeTestObj.swift; sourceTree = "<group>"; };
+		263878432276DC4000A853E7 /* VCMethodHook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCMethodHook.swift; sourceTree = "<group>"; };
 		263EFEE22272975000D06995 /* SFTSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFTSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		263EFEEA2272975000D06995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		263EFEEC2272975100D06995 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +80,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		263877EF2275787700A853E7 /* ThirdLibs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdLibs;
+			sourceTree = "<group>";
+		};
+		263878312275ABBA00A853E7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				263878352275B23A00A853E7 /* MethodEx */,
+				263878322275ABBA00A853E7 /* DelegateEx */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		263878322275ABBA00A853E7 /* DelegateEx */ = {
+			isa = PBXGroup;
+			children = (
+				263878332275ABD000A853E7 /* DelegateExVC.swift */,
+			);
+			path = DelegateEx;
+			sourceTree = "<group>";
+		};
+		263878352275B23A00A853E7 /* MethodEx */ = {
+			isa = PBXGroup;
+			children = (
+				263878362275B31B00A853E7 /* MethodExVC.swift */,
+			);
+			path = MethodEx;
+			sourceTree = "<group>";
+		};
+		2638783822769A0A00A853E7 /* AssociatedInfo */ = {
+			isa = PBXGroup;
+			children = (
+				2638783F22769A5900A853E7 /* AssociatedInfoVC.swift */,
+			);
+			path = AssociatedInfo;
+			sourceTree = "<group>";
+		};
+		2638783922769A0A00A853E7 /* ExchangeMethod */ = {
+			isa = PBXGroup;
+			children = (
+				2638783D22769A4A00A853E7 /* ExchangeMethodVC.swift */,
+				263878432276DC4000A853E7 /* VCMethodHook.swift */,
+			);
+			path = ExchangeMethod;
+			sourceTree = "<group>";
+		};
+		2638783A22769A0A00A853E7 /* InfoList */ = {
+			isa = PBXGroup;
+			children = (
+				2638783B22769A3800A853E7 /* InfoListVC.swift */,
+				2638784122769B6B00A853E7 /* RunTimeTestObj.swift */,
+			);
+			path = InfoList;
+			sourceTree = "<group>";
+		};
 		263EFED92272975000D06995 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +159,7 @@
 		263EFEE42272975000D06995 /* SFTSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
+				263877EF2275787700A853E7 /* ThirdLibs */,
 				263EFF0A2272E0D200D06995 /* Resource */,
 				263EFEFD227299DA00D06995 /* Main */,
 				263EFEF7227299DA00D06995 /* Func */,
@@ -97,6 +174,7 @@
 		263EFEF7227299DA00D06995 /* Func */ = {
 			isa = PBXGroup;
 			children = (
+				263878312275ABBA00A853E7 /* Extension */,
 				263EFEF9227299DA00D06995 /* Refresh */,
 				263EFEFB227299DA00D06995 /* Animation */,
 				263EFEFC227299DA00D06995 /* QQHeader */,
@@ -125,6 +203,9 @@
 		263EFEFA227299DA00D06995 /* RunTime */ = {
 			isa = PBXGroup;
 			children = (
+				2638783A22769A0A00A853E7 /* InfoList */,
+				2638783922769A0A00A853E7 /* ExchangeMethod */,
+				2638783822769A0A00A853E7 /* AssociatedInfo */,
 			);
 			path = RunTime;
 			sourceTree = "<group>";
@@ -141,6 +222,8 @@
 		263EFEFC227299DA00D06995 /* QQHeader */ = {
 			isa = PBXGroup;
 			children = (
+				2638782F22757C7100A853E7 /* FGHeaderView.swift */,
+				2638782D22757B9D00A853E7 /* ScaleHeaderVC.swift */,
 			);
 			path = QQHeader;
 			sourceTree = "<group>";
@@ -314,12 +397,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2638784222769B6B00A853E7 /* RunTimeTestObj.swift in Sources */,
 				263EFF01227299DA00D06995 /* AppDelegate.swift in Sources */,
 				263EFF00227299DA00D06995 /* ViewController.swift in Sources */,
+				263878372275B31B00A853E7 /* MethodExVC.swift in Sources */,
+				2638783022757C7100A853E7 /* FGHeaderView.swift in Sources */,
+				263878342275ABD000A853E7 /* DelegateExVC.swift in Sources */,
+				263878442276DC4000A853E7 /* VCMethodHook.swift in Sources */,
 				263EFF032272A60100D06995 /* SystemRFVC.swift in Sources */,
+				2638783E22769A4A00A853E7 /* ExchangeMethodVC.swift in Sources */,
+				2638783C22769A3800A853E7 /* InfoListVC.swift in Sources */,
+				2638782E22757B9D00A853E7 /* ScaleHeaderVC.swift in Sources */,
 				263EFF072272ADD800D06995 /* UIViewAnimationVC.swift in Sources */,
 				263EFF092272ADFD00D06995 /* CoreAnimationVC.swift in Sources */,
 				263EFF052272A61500D06995 /* CustomRFVC.swift in Sources */,
+				2638784022769A5900A853E7 /* AssociatedInfoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,15 +559,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JA7UMD99EC;
 				INFOPLIST_FILE = SFTSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jixia.www.SFTSDKDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jixia.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -485,15 +579,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JA7UMD99EC;
 				INFOPLIST_FILE = SFTSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jixia.www.SFTSDKDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jixia.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

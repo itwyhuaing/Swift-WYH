@@ -52,14 +52,19 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 
     lazy var data:NSMutableArray = {
         var rlt = NSMutableArray.init()
-        rlt.addObjects(from: ["SystemRFVC","CustomRFVC","UIViewAnimationVC","CoreAnimationVC","CustomRFVC","CustomRFVC"])
+        rlt.addObjects(from: ["SystemRFVC","CustomRFVC",
+                              "UIViewAnimationVC","CoreAnimationVC",
+                              "ScaleHeaderVC","DelegateExVC","MethodExVC",
+                              "InfoListVC","ExchangeMethodVC","AssociatedInfoVC"])
         return rlt
     }();
     
     lazy var detailCnts:NSMutableArray = {
         var rlt = NSMutableArray.init()
-        rlt.addObjects(from: ["Refresh-系统","Refresh-ZHRefresh","Animation-UIView","Animation-CoreAnimation","RunTime","RunLoop"])
+        rlt.addObjects(from: ["Refresh-系统","Refresh-ZHRefresh",
+                              "Animation-UIView","Animation-CoreAnimation",
+                              "头部缩放效果","Extension-Delegate 业务分离","Extension-Method 方法简化",
+                              "RunTime-属性/方法/协议列表信息获取","RunTime-方法交换","RunTime-属性关联"])
         return rlt
     }();
 }
-
